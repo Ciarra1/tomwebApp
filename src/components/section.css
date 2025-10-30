@@ -1,0 +1,10 @@
+.section-header {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.articles-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  flex-wrap: wrap;  
+}

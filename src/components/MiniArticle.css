@@ -1,0 +1,91 @@
+.miniArticle_container {
+  width: 220px;
+  min-height: 240px;
+  height: 240px;
+}
+.miniArticle_container img {
+  width: 220px; /* or 100% if you want it to fill the container */
+  height: 140px; /* fixed height */
+  object-fit: cover; /* keeps proportions, crops if needed */
+  border-radius: 12px;
+}
+
+/* Keep image dimensions exactly as defined above; add a non-intrusive
+   bottom-only gradient overlay using the anchor that wraps the image.
+   This does not change layout or element dimensions. */
+.miniArticle_container a {
+  display: inline-block; /* wrap the image without forcing new sizing */
+  position: relative;
+  border-radius: 12px; /* match the image rounding */
+  overflow: hidden; /* clip the overlay to the rounded corner */
+}
+/*hover*/
+.miniArticle_container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 45%; /* only cover the bottom portion */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  pointer-events: none; /* don't block clicks */
+  border-radius: 10px;
+}
+.miniArticle_container a:hover::after {
+  opacity: 1;
+}
+
+.article-category {
+  background-color: #ffffff; /* white background */
+  border: 1px solid #2a2f35; /* dark gray border */
+  color: #2a2f35; /* text color */
+  padding: 0.45rem; /* spacing inside */
+  border-radius: 8px; /* rounded corners */
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Optional hover effect */
+.article-category:hover {
+  background-color: #2a2f35; /* dark background */
+  color: #ffffff; /* white text */
+}
+
+/* Reset paragraph spacing inside button */
+.article-category .button-p {
+  margin: 0;
+  padding: 0;
+}
+
+.category-date {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.miniArticle-date {
+  margin: 4px;
+  font-size: var(--font-size-medium);
+}
+.miniArticle-desc {
+  font-weight: var(--font-weight-semibold);
+}
+.miniArticle-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--font-family-base);
+}
+.website-title1 {
+  color: var(--color-white);
+  font-size: 12px;
+}
+.logos {
+  size: 20px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  justify-content: space-between;
+  background-color: var(--color-black);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer > .right-part ul {
+  display: flex;
+  gap: 20px;
+}
+.footer > .right-part ul li {
+  list-style-type: none;
+}

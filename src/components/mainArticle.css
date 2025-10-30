@@ -1,0 +1,53 @@
+.mainArticle {
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 12px;
+  min-height: 520px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.4rem;
+  margin-bottom: 50px;
+}
+
+.mainArticle_content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.article-card__date {
+  padding-left: 5px;
+}
+
+.mainArticle:hover {
+  /* keep hover styling minimal; overlay handled by ::before to avoid
+     blocking pointer events on children */
+  transition: background-color 0.3s ease; /* smooth fade effect */
+}
+.mainArticle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* start transparent */
+  z-index: 0;
+  transition: background-color 200ms ease-in-out;
+  pointer-events: none; /* don't block clicks on children */
+  border-radius: 12px;
+}
+
+.mainArticle:hover::before {
+  background-color: rgba(0, 0, 0, 0.35); /* subtle darkening on hover */
+}
+.nav a {
+  text-decoration: none;
+}
