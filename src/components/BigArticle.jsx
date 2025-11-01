@@ -1,7 +1,7 @@
 import './BigArticle.css'
 import { Link } from 'react-router-dom'
 
-export default function MiniArticle({img, category, title, date, desc}){
+export default function BigArticle({img, category, title, date, desc}){
     return(
         <>
         <div className='BigArticle-container'>

@@ -82,4 +82,51 @@ h4 {
   padding-bottom: 70px;
 }
 
+@media (max-width: 600px) {
+  .not-centered {
+    padding-left: 2rem;
+  }
+  .right-part {
+    padding-right: 2rem;
+  }
+  .Latest {
+    padding-right: 2rem;
+  }
+  .right-margin {
+    margin-right: 0px;
+  }
+  body,
+  html {
+    height: auto;
+  }
+  .category-header {
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+  }
 
+  .BigArticle-container {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .not-centered {
+    padding-left: 2rem;
+  }
+  .right-part {
+    padding-right: 2rem;
+  }
+  .Latest {
+    padding-right: 2rem;
+  }
+  .right-margin {
+    margin-right: 0px;
+  }
+  body,
+  html {
+    height: auto;
+  }
+
+  .BigArticle-container {
+    height: auto;
+  }
+}

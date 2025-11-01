@@ -63,7 +63,7 @@ export default function ArticlePageHelper ({img,title,title_desc,date,desc}){
                
             </div>
             <div className='article-desc-container'>
-        <div className='article-desc center w-680px'>
+        <div className='articlePage-desc center w-680px'>
           {desc.split('\n\n').map((paragraph, index) => (
             <p className='space' key={index}>{paragraph}</p>
           ))}
@@ -71,7 +71,7 @@ export default function ArticlePageHelper ({img,title,title_desc,date,desc}){
         
             </div>
             <div className='last-section'>
-                <div className='seperator-line not-centered right-part'></div>
+                <div className='seperator-line'></div>
                 <Section section_name="Related-Articles" items={RelatedArticlesItems} />
             </div>
         </>

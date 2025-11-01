@@ -3,9 +3,10 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  height: 200vh;
 }
 .content {
-  padding-top: 80px;
+  padding-top: 3rem;
 }
 .right-margin {
   padding-right: 9rem;
@@ -24,4 +25,24 @@ body {
   flex: 1 1 0;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .right-margin {
+    padding-right: 2rem;
+  }
+  .category-header-title {
+    font-size: 24px;
+  }
+  .category-header-desc {
+    font-size: 0.75rem;
+  }
+  .category-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .category-header {
+    
+  }
 }

@@ -2,40 +2,40 @@ import Article from "../components/Article"
 export default function Sports() {
     return (
         <>
-            <div className="category-header sports-page-container">
-                <div className="not-centered">
+            <div className="category-header sports-page-container ">
+                <div className="not-centered category-header-container">
                 <h1 className="category-header-title">Sports</h1>
                 <p className="category-header-desc">From game-changing plays to inspiring athlete profiles, we've got your front-row seat to the exciting realm of sports.</p>
                 </div>
             </div>
             <div className="articles-div">
                         <Article
-                        img="src/components/assets/mainArticle_bg.jpeg"
-                            category="REPORTS"
-                            title="Mga Tomasino humakot ng pwesto sa August 2023 MTLE; UST itinanghal na fifth top-performing school"
+                        img="src/components/assets/Sports/[1] Tiger Spikers jolt Blue Eagles for V-League top seat.png"
+                            category="SPORTS"
+                            title="Tiger Spikers jolt Blue Eagles for V-League top seat"
                             date="August 21, 2023"
-                            desc="Hindi kagulat-gulat ang huminto muna at huminga ngayong Agosto dahil sa sunod-sunod na mga pangyayaring may dalang kunot ng noo, tawa, at malalim na pag-iisip."
+                            desc="The Tiger Spikers now hold a 5-1 win-loss card while the Blue Eagles dropped to 4-1 as the V-League semi-finals nears."
                         />
                         <Article
-                        img="src/components/assets/mainArticle_bg.jpeg"
-                            category="REPORTS"
-                            title="Mga Tomasino humakot ng pwesto sa August 2023 MTLE; UST itinanghal na fifth top-performing school"
+                        img="src/components/assets/Sports/[2] Ang Liga UST settles for another draw versus UP.png"
+                            category="SPORTS"
+                            title="Ang Liga UST settles for another draw versus UP"
                             date="August 16, 2023"
-                            desc="Mula sa 40 na mga estudyanteng nanguna sa FTLE 2023, tanging sina Caumban at isang alumna mula sa Xavier University ang pasok sa listahan na hindi nagmula sa Unibersidad ng Pilipinas."
+                            desc="`Golden Booters’ veteran winger Chris Valderama answered back and scored the lone goal for UST right before halftime."
                         />
                         <Article
-                        img="src/components/assets/mainArticle_bg.jpeg"
-                            category="REPORTS"
-                            title="Mga Tomasino humakot ng pwesto sa August 2023 MTLE; UST itinanghal na fifth top-performing school"
+                        img="src/components/assets/Sports/[3] EJ Obiena bounces back takes top podium of ISTAF Berlin.png"
+                            category="SPORTS"
+                            title="EJ Obiena bounces back takes top podium of ISTAF Berlin"
                             date="August 16, 2023"
-                            desc="Mula sa 40 na mga estudyanteng nanguna sa FTLE 2023, tanging sina Caumban at isang alumna mula sa Xavier University ang pasok sa listahan na hindi nagmula sa Unibersidad ng Pilipinas."
+                            desc="Following a last-spot finish of 5.60m in the recent Wanda Diamond League in Zurich, Switzerland on Thursday (Friday in Manila), the Thomasian alumnus rebounded big time with a 5.92m clear in three attempts to claim the top spot of the outdoor tournament."
                         />
                         <Article
-                        img="src/components/assets/mainArticle_bg.jpeg"
-                            category="REPORTS"
-                            title="Mga Tomasino humakot ng pwesto sa August 2023 MTLE; UST itinanghal na fifth top-performing school"
+                        img="src/components/assets/Sports/[4] Josh Ybañez’s monster game lifts UST past FEU for fourth V-League win.png"
+                            category="SPORTS"
+                            title="Josh Ybañez’s monster game lifts UST past FEU for fourth V-League win"
                             date="August 16, 2023"
-                            desc="Mula sa 40 na mga estudyanteng nanguna sa FTLE 2023, tanging sina Caumban at isang alumna mula sa Xavier University ang pasok sa listahan na hindi nagmula sa Unibersidad ng Pilipinas."
+                            desc="Ybañez was virtually unstoppable in the match, posting 33 points off 29 attacks, three blocks, and one ace, punctuated by a cross-court hit that sealed the win and a semi-final berth for UST."
                         />
                         </div>
         </>

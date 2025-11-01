@@ -6,7 +6,9 @@ export default function MiniArticle({img, category, date, desc}){
         <>
         <div className='miniArticle_container'>
             <Link to="/article-page" state={{ img, category, title: desc, date, desc }}>
-              <img src={img} alt="" />
+             <div className="miniArticle-img-wrapper">
+                <img src={img} alt="" />
+            </div>
             </Link>
             <div className='miniArticle-info'>
                 <div className='category-date'>

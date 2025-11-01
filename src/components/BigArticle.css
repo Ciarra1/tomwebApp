@@ -98,3 +98,26 @@
   flex-direction: column;
   gap: 6px;
 }
+
+@media (max-width: 600px) {
+  .BigArticleSectionContainer {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .BigArticle-container {
+    max-width: 100%;
+  }
+  .menuOpen {
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .BigArticleSectionContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .BigArticle-container {
+    max-width: 100%;
+  }
+}

@@ -34,6 +34,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  padding-top: 0px;
 }
 
 .article-info {
@@ -42,4 +43,134 @@
   padding-left: 22px;
   gap: 10px;
   justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .article-container img,
+  .article-img {
+    width: 100%;
+    height: auto; /* allows natural scaling */
+    object-fit: cover;
+    border-radius: 12px; /* optional — can keep rounded corners if you want */
+  }
+  .article-info {
+    padding-left: 0;
+  }
+
+  .category-date {
+    gap: 13px;
+  }
+  .article-title {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .article-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .article-info {
+    padding-left: 0;
+    justify-content: flex-start; /* let content stack naturally */
+    align-items: flex-start; /* keeps consistent left alignment */
+    gap: 8px; /* optional — smaller spacing for mobile */
+  }
+}
+@media (max-width: 380px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .article-container img,
+  .article-img {
+    width: 100%;
+    height: auto; /* allows natural scaling */
+    object-fit: cover;
+    border-radius: 12px; /* optional — can keep rounded corners if you want */
+  }
+  .article-info {
+    padding-left: 0;
+  }
+
+  .category-date {
+    gap: 13px;
+  }
+  .category-date p {
+    font-size: 0.7rem;
+  }
+  .article-title {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .article-desc {
+    font-size: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .article-info {
+    padding-left: 0;
+    justify-content: flex-start; /* let content stack naturally */
+    align-items: flex-start; /* keeps consistent left alignment */
+    gap: 8px; /* optional — smaller spacing for mobile */
+  }
+}
+/*hover*/
+.article-img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.article-img-container a {
+  position: relative;
+  display: inline-block;
+}
+
+.article-img-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px ;
+  top: 0; /* cover full image if you like; adjust as needed */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.article-img-container a:hover::after {
+  opacity: 1;
 }

@@ -7,37 +7,37 @@ import BigArticle from './components/BigArticle'
 function App() {
   const latestItems = [
     {
-      img: 'src/components/assets/Sports/[1] Tiger Spikers jolt Blue Eagles for V-League top seat.png',
-      category: 'SPORTS',
-      date: 'September 10, 2023',
-      desc: 'The Tiger Spikers now hold a 5-1 win-loss card while the Blue Eagles dropped to 4-1 as the V-League semi-finals',
-    },
-    {
       img: 'src/components/assets/Sports/[2] Ang Liga UST settles for another draw versus UP.png',
       category: 'SPORTS',
-      date: 'September 08, 2023',
-      desc: 'Ang Liga UST settles for another draw in a hard-fought match with UP.',
+      date: 'September 09, 2023',
+      desc: 'Ang Liga UST settles for another draw versus UP.png',
     },
     {
       img: 'src/components/assets/Sports/[3] EJ Obiena bounces back takes top podium of ISTAF Berlin.png',
       category: 'SPORTS',
-      date: 'September 02, 2023',
-      desc: 'EJ Obiena bounces back and takes the top podium at ISTAF Berlin.',
+      date: 'September 04, 2023',
+      desc: 'EJ Obiena bounces back takes top podium of ISTAF Berlin.png',
     },
     {
       img: 'src/components/assets/Sports/[4] Josh Ybañez’s monster game lifts UST past FEU for fourth V-League win.png',
-      category: 'SPORTS',
+      category: 'SPORTS', 
+      date: 'September 02, 2023',
+      desc: 'Josh Ybañez’s monster game lifts UST past FEU for fourth V-League win.png',
+    },
+    {
+      img: 'src/components/assets/Blogs/[1] Ang Agosto 2023 ay isang mabatong daan.png',
+      category: 'BLOG',
       date: 'August 28, 2023',
-      desc: 'Josh Ybañez’s monster game lifts UST past FEU for their fourth V-League win.',
+      desc: 'Ang Agosto 2023 ay isang mabatong daan.png',
     },
   ];
 
   const moreItems = [
     {
-      img: 'src/components/assets/Blogs/[1] Ang Agosto 2023 ay isang mabatong daan.png',
-      category: 'BLOGS',
+      img: 'src/components/assets/Reports/[1] Mga Tomasino humakot ng pwesto sa August 2023 MTLE UST itinanghal na fifth top-performing school.png',
+      category: 'REPORTS',
       date: 'August 21, 2023',
-      desc: 'Ang Agosto 2023 ay isang mabatong daan — isang pagninilay sa mga nangyari nitong buwan.',
+      desc: 'Mga Tomasino humakot ng pwesto sa August 2023 MTLE UST itinanghal na fifth top-performing school.png',
     },
     {
       img: 'src/components/assets/Blogs/[2] Liham para sa isang batang Tomasino.png',
@@ -55,7 +55,7 @@ function App() {
       img: "src/components/assets/Blogs/[4] ‘Barbie’ celebrates and criticizes the complexities of womanhood.png",
       category: 'BLOGS',
       date: 'July 31, 2023',
-      desc: 'A review and reflection on the cultural conversations sparked by Barbie.',
+      desc: 'Barbie celebrates and criticizes the complexities of womanhood.png',
     },
   ];
 

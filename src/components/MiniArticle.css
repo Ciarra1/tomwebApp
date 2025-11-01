@@ -19,7 +19,7 @@
   border-radius: 12px; /* match the image rounding */
   overflow: hidden; /* clip the overlay to the rounded corner */
 }
-/*hover*/
+/* hover */
 .miniArticle_container a::after {
   content: "";
   position: absolute;
@@ -88,4 +88,94 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .miniArticle_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 50%;
+    height: 50%;
+    padding-bottom: 30px;
+  }
+
+  .miniArticle_container img {
+    max-width: 120px; /* consistent width */
+    min-height: 100px; /* consistent height */
+    object-fit: contain; /* crop to fill */
+    border-radius: 12px; /* same rounding */
+    flex-shrink: 0; /* prevent image from shrinking */
+  }
+  .miniArticle-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the box while maintaining aspect ratio */
+    display: block; /* removes inline gaps */
+  }
+  .miniArticle-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .category-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .miniArticle-desc {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .miniArticle_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 50%;
+    height: 50%;
+    padding-bottom: 30px;
+  }
+
+  .miniArticle_container img {
+    max-width: 120px; /* consistent width */
+    min-height: 100px; /* consistent height */
+    object-fit: contain; /* crop to fill */
+    border-radius: 12px; /* same rounding */
+    flex-shrink: 0; /* prevent image from shrinking */
+  }
+  .miniArticle-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the box while maintaining aspect ratio */
+    display: block; /* removes inline gaps */
+  }
+  .miniArticle-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .category-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .miniArticle-desc {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
 }
