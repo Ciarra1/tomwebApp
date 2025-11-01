@@ -41,7 +41,11 @@ const router = createBrowserRouter([
     path: "/article-page",
     element: <Layout><ArticlePage /></Layout>,
   }
-]);
+],
+  {
+    basename: "/tomwebApp", // 👈 add this line
+  }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
