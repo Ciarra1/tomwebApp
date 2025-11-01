@@ -1,9 +1,9 @@
 import ArticlePageHelper from "./ArticlePageHelper";
-
+import blog1 from '../assets/Blogs/blog1.png';
 export default function ArticlePage(){
     return(
       <ArticlePageHelper
-      img='src/components/assets/Blogs/[1] Ang Agosto 2023 ay isang mabatong daan.png'
+      img={blog1}
       title='Tiger Spikers jolt Blue Eagles for V-League top seat'
       title_desc='The Tiger Spikers now hold a 5-1 win-loss card while the Blue Eagles dropped to 4-1 as the V-League semi-finals nears.'
       date='August 12, 2023'

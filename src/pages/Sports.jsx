@@ -1,9 +1,9 @@
 import Article from "../components/Article"
 
-import sports1 from 'src/components/assets/Sports/[1] Tiger Spikers jolt Blue Eagles for V-League top seat.png'
-import sports2 from 'src/components/assets/Sports/[2] Ang Liga UST settles for another draw versus UP.png'
-import sports3 from 'src/components/assets/Sports/[3] EJ Obiena bounces back takes top podium of ISTAF Berlin.png'
-import sports4 from 'src/components/assets/Sports/[4] Josh Ybañez’s monster game lifts UST past FEU for fourth V-League win.png'
+import sports1 from '../assets/Sports/sport1.png'
+import sports2 from '../assets/Sports/sport2.png'
+import sports3 from '../assets/Sports/sport3.png'
+import sports4 from '../assets/Sports/sport4.png'
 
 export default function Sports() {
     return (

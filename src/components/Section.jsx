@@ -1,7 +1,7 @@
 import './section.css';
 import MiniArticle from './MiniArticle';
 
-import mainImg from 'src/components/assets/mainArticle_bg.jpeg'
+import mainImg from '../assets/mainArticle_bg.jpeg'
 export default function Section({ section_name, items }) {
     // default items if none provided (keeps existing behaviour)
     const defaults = [

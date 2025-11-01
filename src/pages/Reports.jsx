@@ -1,9 +1,8 @@
 import Article from "../components/Article";
-import reports1 from 'src/components/assets/Reports/[1] Mga Tomasino humakot ng pwesto sa August 2023 MTLE UST itinanghal na fifth top-performing school.png'
-import reports2 from 'src/components/assets/Reports/[2] Tomasino pasok sa top 10 ng kauna-unahang food tech boards.png'
-import reports3 from 'src/components/assets/Reports/[3] Mga Tomasino nanguna sa August 2023 BLEPP UST tinanghal na isa sa mga Top Performing-Schools-min.png'
-
-import reports4 from 'src/components/assets/Reports/[4] Tiongco ‘Maging totoo sa sarili, mamayagpag’.png'
+import reports1 from '../assets/Reports/report1.png'
+import reports2 from '../assets/Reports/report2.png'
+import reports3 from '../assets/Reports/report3.png'
+import reports4 from '../assets/Reports/report4.png'
 
 export default function Reports() {
     return (

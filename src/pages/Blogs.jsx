@@ -1,8 +1,8 @@
 import Article from "../components/Article"
-import blog1 from 'src/components/assets/Blogs/[1] Ang Agosto 2023 ay isang mabatong daan.png'
-import blog2 from 'src/components/assets/Blogs/[2] Liham para sa isang batang Tomasino.png'
-import blog3 from 'src/components/assets/Blogs/[3] Yakapin ang bawat sandali, Tomasino! Mga payo para sa unang taon sa kolehiyo.png'
-import blog4 from 'src/components/assets/Blogs/[4] ‘Barbie’ celebrates and criticizes the complexities of womanhood.png'
+import blog1 from '../assets/Blogs/blog1.png'
+import blog2 from '../assets/Blogs/blog2.png'
+import blog3 from '../assets/Blogs/blog3.png'
+import blog4 from '../assets/Blogs/blog4.png'
 export default function Blogs() {
     return (
         <>
